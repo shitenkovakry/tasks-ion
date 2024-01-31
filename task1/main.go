@@ -5,10 +5,10 @@ func GetResult(array []int) (int, int) {
 		return 0, 0
 	}
 
-	maxValue := FindMaxInArray(array)
 	minValue := FindMinInArray(array)
+	maxValue := FindMaxInArray(array)
 
-	return maxValue, minValue
+	return minValue, maxValue
 }
 
 func FindMaxInArray(array []int) int {
