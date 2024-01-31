@@ -1,19 +1,14 @@
 package main
 
-import "fmt"
-
-func GetResult(array []int) (string, string) {
+func GetResult(array []int) (int, int) {
 	if len(array) == 0 {
-		return "array is empty", ""
+		return 0, 0
 	}
 
 	maxValue := FindMaxInArray(array)
 	minValue := FindMinInArray(array)
 
-	maxValueString := fmt.Sprintln("max value =", maxValue)
-	minValueString := fmt.Sprintln("min value =", minValue)
-
-	return maxValueString, minValueString
+	return maxValue, minValue
 }
 
 func FindMaxInArray(array []int) int {

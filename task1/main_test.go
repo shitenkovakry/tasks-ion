@@ -27,8 +27,8 @@ func Test_Min_Case1(t *testing.T) {
 func Test_Reasult_Case1(t *testing.T) {
 	array := []int{3, 5, 8, 6, 2, 7, 10, 11}
 
-	expectedMax := "max value = 11\n"
-	expectedMin := "min value = 2\n"
+	expectedMax := 11
+	expectedMin := 2
 
 	actualMax, actualMin := GetResult(array)
 
@@ -39,8 +39,8 @@ func Test_Reasult_Case1(t *testing.T) {
 func Test_Reasult_Case2(t *testing.T) {
 	array := []int{}
 
-	expectedMax := "array is empty"
-	expectedMin := ""
+	expectedMax := 0
+	expectedMin := 0
 
 	actualMax, actualMin := GetResult(array)
 
