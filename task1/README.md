@@ -22,7 +22,7 @@ max=11
        01  ARRAY          OCCURS 100 TIMES PIC 9(4).
        01  MIN-VALUE      PIC 9(4).
        01  MAX-VALUE      PIC 9(4).
-       01 I PIC 9(4).
+       01 I               PIC 9(4).
 
        PROCEDURE DIVISION.
            ACCEPT ARRAY-SIZE.
