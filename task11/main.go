@@ -14,7 +14,7 @@ func FindTheBigDifferenceBetweenTwoElements(array []int) int {
 		}
 	}
 
-	differences := max - min
+	difference := max - min
 
-	return differences
+	return difference
 }
