@@ -21,6 +21,10 @@ func FindBigCombinationInArray(array []int) ([]int, int) {
 		}
 	}
 
+	if len(arrayWithCombination) > 1 {
+		arrayWithBigCombinations = append(arrayWithBigCombinations, arrayWithCombination)
+	}
+
 	maxCombination := []int{}
 	for _, combination := range arrayWithBigCombinations {
 		if len(maxCombination) < len(combination) {
